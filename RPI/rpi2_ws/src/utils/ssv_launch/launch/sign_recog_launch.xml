@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<node pkg="camera_ros" exec="camera_node" namespace="sign">
+		<env name="LIBCAMERA_RPI_TUNING_FILE" value="/root/ros_ws/install/libcamera/share/libcamera/ipa/rpi/vc4/imx219_noir.json"/>
+		<param name="format" value="RGB888"/>
+		<param name="sensor_mode" value="3280:2464"/>
+		<param name="width" value="160"/>
+		<param name="height" value="120"/>
+	</node>
+
+	<node pkg="sign" exec="sign_detector"/>
+</launch>

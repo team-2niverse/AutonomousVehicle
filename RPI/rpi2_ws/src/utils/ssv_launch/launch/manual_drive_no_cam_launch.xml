@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<node pkg="planner_manager" exec="planner_manager_node"/>
+	<node pkg="ssv_control" exec="ssv_control_node"/>
+
+	<include file="$(find-pkg-share ros2_socketcan)/launch/socket_can_bridge.launch.xml"/>
+</launch>

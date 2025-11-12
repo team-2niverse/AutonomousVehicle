@@ -1,0 +1,12 @@
+#ifndef PLANNER_MANAGER_MODE_H
+#define PLANNER_MANAGER_MODE_H
+
+enum class Mode : uint8_t {
+	MANUAL,
+	CRUISE,
+	DODGE,
+	SWITCH,
+	TURN
+};
+
+#endif // PLANNER_MANAGER_MODE_H

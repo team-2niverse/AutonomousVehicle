@@ -1,0 +1,29 @@
+<launch>
+
+  <node pkg="motion_planner" exec="line_change_node">
+    <param name="do_left_time" value="2" />
+    <param name="do_right_time" value="8" />
+    <param name="do_straight_time" value="18" />
+    <param name="do_finish_time" value="25" />
+    <param name="do_left_steering" value="1.0" />
+    <param name="do_right_steering" value="0.0" />
+    <param name="do_straight_steering" value="-1.0" />
+
+    <param name="sw_right_time" value="2" />
+    <param name="sw_left_time" value="8" />
+    <param name="sw_straight_time" value="18" />
+    <param name="sw_finish_time" value="25" />
+    <param name="sw_right_steering" value="-0.9" />
+    <param name="sw_left_steering" value="-0.7" />
+    <param name="sw_straight_steering" value="0.5" />
+
+    <param name="tu_right_time1" value="2" />
+    <param name="tu_right_time2" value="10" />
+    <param name="tu_straight_time" value="23" />
+    <param name="tu_finish_time" value="34" />
+    <param name="tu_right_steering1" value="-1.0" />
+    <param name="tu_right_steering2" value="-0.5" />
+    <param name="tu_straight_steering" value="0.0" />
+  </node>
+
+</launch>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<node pkg="planner_manager" exec="planner_manager_node"/>
+	<node pkg="ssv_control" exec="ssv_control_node"/>
+	<node pkg="tof_sensor" exec="tof_sensor_node"/>
+	<include file="$(find-pkg-share speed_planner)/launch/speed_planner_launch.xml"/>
+	<include file="$(find-pkg-share motion_planner)/launch/motion_planner_launch.xml"/>
+	<include file="$(find-pkg-share ros2_socketcan)/launch/socket_can_bridge.launch.xml"/>
+</launch>
