@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<node pkg="joy_linux" exec="joy_linux_node">
+		<param name="deadzone" value="0.08"/>
+		<param name="coalesce_interval" vallue="0.01"/>
+	</node>
+	<node pkg="camera_ros" exec="camera_node">
+		<param name="format" value="RGB888"/>
+		<param name="sensor_mode" value="3280:2464"/>
+		<param name="width" value="160"/>
+		<param name="height" value="120"/>
+		<param name="orientation" value="180"/>
+	</node>
+
+	<node pkg="lkas_test" exec="lkas_node"/>
+</launch>

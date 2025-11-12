@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<node pkg="lkas_test" exec="lkas_node" />
+	<node pkg="lkas_test" exec="tf2can_node" />
+	<include file="$(find-pkg-share ros2_socketcan)/launch/socket_can_bridge.launch.xml"/>
+</launch>
